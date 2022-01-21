@@ -15,7 +15,7 @@
     <header>
         <!-- NAV BAR -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -37,11 +37,11 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Shoes</a>
+                            <a class="nav-link active" href="#Shoes">Shoes</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Bag Pack</a>
+                            <a class="nav-link active" href="#Bag Pack">Bag Pack</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Contact Us</a>
@@ -157,7 +157,7 @@
             <!-- SHOE SECTION BY CARD -->
 
 
-            <div class="container my-5">
+            <div class="container my-5" id="Shoes">
                 <h2>Shoes</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
@@ -217,7 +217,7 @@
             <!-- BAG SECTION BY CARD-->
 
 
-            <div class="container my-5">
+            <div class="container my-5" id="Bag Pack">
                 <h2>Bag Pack</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
@@ -269,20 +269,26 @@
         <br>
 
         <section>
-            <div style="height: 250px;" class="container bg-success d-flex justify-content-center align-items-center">
-                <div>
-                    <h1 class="text-white">LET'S STAY IN TOUCH</h1>
-                    <p class="text-white">Get updates on sales, specials and more</p>
-                    <input type="email" name="" id="">
-                    <br>
-                    <button class="btn btn-danger">Submit</button>
+            <div class="container my-5">
+                <div style="height: 250px;"
+                    class="container bg-success d-flex justify-content-center align-items-center">
+                    <div>
+                        <h1 class="text-white">LET'S STAY IN TOUCH</h1>
+                        <p class="text-white">Get updates on sales, specials and more</p>
+                        <input class="form-control" type="email" placeholder="Your mail" name="" id="">
+                        <br>
+                        <button class="btn btn-danger">Submit</button>
+                    </div>
                 </div>
             </div>
         </section>
+        <br>
+        <br>
+
 
     </main>
-    <footer>
-
+    <footer class="mt-0">
+        <p class="text-center"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
